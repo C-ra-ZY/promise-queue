@@ -53,6 +53,8 @@ module.exports = class PromiseQue {
 					});
 			}
 			emitter.on("finished", () => {
+				emitter.removeAllListeners();
+				emitter = null;
 				resolve(this.stat);
 			});
 		});
