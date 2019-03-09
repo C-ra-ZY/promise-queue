@@ -1,0 +1,19 @@
+{
+	"name": "promise-sequence",
+	"version": "1.0.0",
+	"description": "execute an array of promise one by one once the last one was rejected",
+	"main": "index.js",
+	"scripts": {
+		"build": "babel ./src -d dist"
+	},
+	"keywords": ["promise", "plan", "b", "one", "by", "one"],
+	"author": "Chen, Carl",
+	"license": "MIT",
+	"dependencies": {
+		"@babel/polyfill": "^7.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.1.0",
+		"@babel/preset-env": "^7.1.0"
+	}
+}
