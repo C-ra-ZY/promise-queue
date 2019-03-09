@@ -5,18 +5,19 @@ this package help to realize such a scenario: get promise resolved result in seq
 ## Install
 
 ```bash
-npm i promise-sequence 
+npm i promise-queue 
 ```
 
 ## Usage
 
 ```js
-const pq = require("./index.js");
+const PromiseQue = require("./index.js");
 let params=[];
 /*
     fill the params with promises
 */
-pq(params).then(/*resolve logic*/).catch(/*reject logic*/)
+let pq=new PromiseQue(params).done().then(/*resolve logic*/).catch(/*reject logic*/)
+let status = await pq.status();
 ```
 
 ## Example

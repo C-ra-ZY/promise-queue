@@ -1,12 +1,12 @@
 {
-	"name": "promise-sequence",
+	"name": "promise-queue",
 	"version": "1.0.0",
-	"description": "execute an array of promise one by one once the last one was rejected",
+	"description": "accept an array of promises to be resolved one by one",
 	"main": "index.js",
 	"scripts": {
 		"build": "babel ./src -d dist"
 	},
-	"keywords": ["promise", "plan", "b", "one", "by", "one"],
+	"keywords": ["promise", "queue"],
 	"author": "Chen, Carl",
 	"license": "MIT",
 	"dependencies": {
